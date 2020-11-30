@@ -15,30 +15,44 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Mission to Mars!</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
         </div>
       </div>
     
     <!-- Line one -->
     <div class="container">
         <div class="row">
-          <div class="col">Lastest Mars News</div>
+          <div class="col">
+              <h3>Lastest Mars News</h3>
+         </div>
         </div>
     <!-- News Title -->
         <div class="row">
-            <div class="col">New title</div>
+            <div class="col-md-12">
+                <h5>{{mars_dict.news_title}}</h5>
+            </div>
           </div>
     <!-- News Paragraph -->
         <div class="row">
-            <div class="col">News Paragrapsh</div>
+            <div class="col-md-12">
+             <h6 class="heading">{{mars_dict.news_paragraph}}</h6>
           </div>
       </div>
     <!-- Featured Mars Image & Mars Facts-->
       <div class="container">
         <div class="row">
-          <div class="col-8">col-8</div>
-          <div class="col-4">col-4</div>
+          <div class="col-md-8">
+           <h3> Featured Mars Image</h3>
+           <img src="{{mars_dict.image_url}}" class="card-img-top" alt="Mars Featured Image">
+          </div>
+          <div class="col-md-4">
+              <h5> Mars Facts </h5>
+              <section>
+                  {{mars_dict.mars_facts|safe}}
+              </section>
+
+         </div>
+           
         </div>
       </div>
 
@@ -47,25 +61,25 @@
     <div class="row row-cols-1 row-cols-md-2">
         <div class="col mb-4">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="{{mars_dict.mars_hemisphers[0]['image_url']}}" class="card-img-top" alt="Cerberus Hemisphere Enhanced">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">{{mars_dict.mars_hemisphers[0]['title']}}</h5>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="{{mars_dict.mars_hemisphers[1]['image_url']}}" class="card-img-top" alt="Schiaparelli Hemisphere Enhanced">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">{{mars_dict.mars_hemisphers[1]['title']}}</h5>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="{{mars_dict.mars_hemisphers[2]['image_url']}}" class="card-img-top" alt="Syrtis Major Hemisphere Enhanced">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">{{mars_dict.mars_hemisphers[2]['title']}}</h5>
             </div>
           </div>
         </div>
