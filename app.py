@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
-import scrape_mars_copy
+import scrape_mars
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -18,7 +18,7 @@ def index():
 @app.route('/scrape')
 def scraper():
     mars_dict = mongo.db.mars_dict
-    mars_data = scrape_mars_copy.scrape()
+    mars_data = scrape_mars.scrape()
     mars_dict.update({}, mars_data, upsert=True)
     return redirect('/', code=302)
 
