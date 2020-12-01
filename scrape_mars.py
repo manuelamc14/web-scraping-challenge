@@ -22,7 +22,7 @@ def init_browser():
 
 # Create a function to execute the scraping code
 
-def scrape_mars_news():
+def scrape():
 
     # Initialize browser
 
@@ -59,16 +59,8 @@ def scrape_mars_news():
     # Quit the browser
 
     browser.quit()
-    
-    # Returns infomartion
-    
-    return mars_dict
 
 ## JPL Mars Space Images ##
-
-# Create a function to execute the scraping code
-
-def scrape_mars_images():
     
     # Initialize browser
     browser = init_browser()
@@ -122,18 +114,8 @@ def scrape_mars_images():
     # Quir browser
 
     browser.quit()
-    
-    # Return the information
-
-    return mars_dict 
 
 ### Mars Facts ###
-
-# Create a function to execute the scraping code
-
-def scrape_mars_facts():
-
-    # Initiliazate the browser
 
     browser = init_browser()
     
@@ -157,7 +139,7 @@ def scrape_mars_facts():
     
     # Convert the table to html
     
-    html_mars_facts = mars_facts.to_html(classes = 'table table-striped', header =True, index=True,justify='left')
+    html_mars_facts = mars_facts.to_html(classes = 'table table-striped-sm', header =True, index=True,justify='left')
 
     # Include Mars Facts table to the dictionary
 
@@ -171,12 +153,6 @@ def scrape_mars_facts():
 
 
 ### Mars Hemispheres ###
-
-# Create a function to execute the scraping code
-
-def scrape_mars_hemispheres():
-
-    # Initializate browser
 
     browser = init_browser()
 
@@ -246,6 +222,3 @@ def scrape_mars_hemispheres():
     browser.quit()
 
     return mars_dict
-
-
-
