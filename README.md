@@ -8,6 +8,11 @@
 * Splinter
 * Requests
 
+## Instructions
+
+* app.py : It sets up the connection between the local host and MongoDB.
+* scrape_mars.py: Run the app and open your local sever at http://127.0.0.1:5000/ to access to the app.
+
 ## Description
 
 This project aims to create a Flask application connected to a MongoDB, which includes information about the mission to Mars. The information stored in the database is scraped every time the application is run, allowing it to have the most updated information.
@@ -55,8 +60,8 @@ With the aid of bootstrap, a website was designed to display the information in 
 
 ![ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part1.png)
 
-[ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part2.png)
+![ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part2.png)
 
-[ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part3.png)
+![ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part3.png)
 
-### Note: Please keep in mind that this app relies on third-party pages, which could change their structure and affect the scrapping process.
+#### Note: Please keep in mind that this app relies on third-party pages, which could change their structure and affect the scrapping process.
