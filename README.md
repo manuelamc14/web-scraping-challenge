@@ -1,5 +1,15 @@
 # web-scraping-challenge
 
+## Technology
+
+* MongoDB
+* Flask App
+* Bs4
+* Splinter
+* Requests
+
+## Description
+
 This project aims to create a Flask application connected to a MongoDB, which includes information about the mission to Mars. The information stored in the database is scraped every time the application is run, allowing it to have the most updated information.
 
 There are three components to achieve this project:
@@ -41,3 +51,12 @@ The connection between the app and MongoDB was established in file “app.py.”
 
 With the aid of bootstrap, a website was designed to display the information in an organized way.
  
+## Images
+
+![ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part1.png)
+
+[ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part2.png)
+
+[ScreenShot](https://github.com/manuelamc14/web-scraping-challenge/blob/main/Missions_to_Mars/Images/final_app_part3.png)
+
+### Note: Please keep in mind that this app relies on third-party pages, which could change their structure and affect the scrapping process.
